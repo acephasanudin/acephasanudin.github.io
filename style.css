@@ -191,6 +191,10 @@ a{
     padding-left: 10px;
 }
 
+.coffee {
+    display: inline !important;
+}
+
 @media(max-width:780px){
     .grid{
         grid-template-columns: 1fr;
