@@ -193,6 +193,7 @@ a{
 
 .coffee {
     display: inline !important;
+    text-decoration: underline;
 }
 
 @media(max-width:780px){
