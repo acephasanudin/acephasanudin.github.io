@@ -223,3 +223,12 @@ a {
     border-radius: 0%;
   }
 }
+
+@media only screen and (max-height: 750px) {
+  .area {
+    height: 130vh;
+  }
+  .circles {
+    height: 130vh;
+  }
+}
