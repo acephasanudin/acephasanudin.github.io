@@ -7,19 +7,23 @@
 }
 
 body {
+  background-image: url("background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   padding: 0;
-  color: #fdfffe;
+  color: #e7c664;
   font-family: "Montserrat";
 }
 
 h2,
 .white {
-  color: #95feff;
+  color: #ffffff;
 }
 
 a {
-  color: #fdfffe;
+  color: #e7c664;
   text-decoration: none;
 }
 
@@ -30,8 +34,7 @@ a {
 }
 
 .area {
-  background: #0e395d;
-  background: -webkit-linear-gradient(to left, #02244a, #0e395d);
+  background-color: rgba(30, 30, 30, 0.7);
   width: 100%;
   height: 100vh;
 }
