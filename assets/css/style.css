@@ -1,0 +1,242 @@
+/* global */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #e7c664;
+  font-family: "Montserrat";
+}
+
+h2,
+.white {
+  color: #ffffff;
+}
+
+a {
+  color: #e7c664;
+  text-decoration: none;
+}
+
+.context {
+  width: 100%;
+  position: absolute;
+  top: 10vh;
+}
+
+.area {
+  background-color: rgba(30, 30, 30, 0.7);
+  width: 100%;
+  height: 100vh;
+}
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(199, 238, 245, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.avatar {
+  width: 120px;
+}
+
+.section-right {
+  padding-top: 20vh;
+  text-align: center;
+}
+
+.section-right p {
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.section-right h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.section-right a {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.section-left {
+  padding-top: 10vh;
+  width: 70%;
+}
+
+.section-left h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.section-left p {
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.section-left a {
+  display: block;
+  padding: 5px;
+  font-size: 1.2rem;
+  padding-left: 0;
+  width: 200px;
+}
+
+.white:hover {
+  position: relative;
+  padding-left: 10px;
+}
+
+.coffee {
+  display: inline !important;
+  text-decoration: underline;
+}
+
+@media (max-width: 780px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .section-right {
+    padding: 0;
+    padding-top: 5rem;
+  }
+  .section-left {
+    padding: 0;
+    padding-left: 1.5rem;
+    padding-top: 2rem;
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 100%;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 0%;
+  }
+}
+
+@media only screen and (max-height: 750px) {
+  .area {
+    height: 120vh;
+  }
+  .circles {
+    height: 120vh;
+  }
+  .context {
+    width: 100%;
+    position: absolute;
+    top: 0vh;
+  }
+}
