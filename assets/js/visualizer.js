@@ -148,19 +148,6 @@ AUDIO.VISUALIZER = (function () {
   Visualizer.prototype.bindEvents = function () {
     var _this = this;
 
-    document.addEventListener("click", function (e) {
-      if (e.target === _this.canvas) {
-        e.stopPropagation();
-        if (!_this.isPlaying) {
-          return _this.ctx.state === "suspended"
-            ? _this.playSound()
-            : _this.loadSound();
-        } else {
-          return _this.pauseSound();
-        }
-      }
-    });
-
     if (_this.autoplay) {
       _this.loadSound();
     }
