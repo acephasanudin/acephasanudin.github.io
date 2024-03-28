@@ -227,13 +227,13 @@ a {
 
     .section-right {
         padding: 0;
-        padding-top: 5rem;
+        padding-top: 1rem;
     }
 
     .section-left {
         padding: 0;
         padding-left: 1.5rem;
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
 }
 
