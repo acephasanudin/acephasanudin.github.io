@@ -2,80 +2,356 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Acep Hasanudin</title>
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Video Background Example</title>
-        <style>
-        </style>
-    </head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acep Hasanudin</title>
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
 
 <body>
-    <video autoplay loop muted playsinline>
-        <source src="assets/videos/background.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <div class="area">
-        <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+  <main>
+    <div class="main-content">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
         </ul>
+      </nav>
+      <article class="about  active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+        <section class="about-text">
+          <p>
+            I'm a Software Engineer based in Cianjur, Indonesia, with a passion for crafting elegant solutions in the
+            digital realm. My expertise lies in developing robust software systems and applications that streamline
+            processes and enhance user experiences.
+          </p>
+          <p>
+            With a keen eye for detail and a knack for problem-solving, I thrive on turning complex challenges into
+            streamlined, efficient solutions. Whether it's optimizing algorithms, architecting scalable systems, or
+            fine-tuning code for performance, I'm dedicated to delivering high-quality, reliable software that meets and
+            exceeds expectations.
+          </p>
+          <p>
+            My goal is to marry functionality with innovation, creating software that not only meets user needs but also
+            delights and inspires. With a track record of successful projects and a commitment to continuous learning
+            and improvement, I'm ready to tackle any software engineering challenge that comes my way.
+          </p>
+        </section>
+        <section class="service">
+          <h3 class="h3 service-title">What i'm doing</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-backend.png" alt="design icon" width="80">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Backend Development</h4>
+                <p class="service-item-text">
+                  the unseen force powering digital experiences. From databases to server logic, it's where
+                  functionality meets finesse. I thrive on solving its puzzles and crafting seamless solutions.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-web.png" alt="Web development icon" width="80">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Development</h4>
+                <p class="service-item-text">
+                  where pixels meet possibilities. From captivating designs to responsive functionality, it's about
+                  creating experiences that leave a mark. I'm passionate about shaping the digital landscape, one line
+                  of code at a time.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-mobile.png" alt="mobile app icon" width="80">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile Development</h4>
+                <p class="service-item-text">
+                  sculpting seamless experiences on the go. From sleek interfaces to robust functionality, it's about
+                  bringing ideas to life in the palm of your hand. I'm driven to craft user-centric solutions that
+                  elevate the mobile experience.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-world.png" alt="camera icon" width="80">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Make the world a better place</h4>
+                <p class="service-item-text">
+                  Have you ever questioned why we use QWERTY? Why do our fingers move so far when we want to type
+                  numbers? I love fixing that problems!
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="stacks">
+          <h3 class="h3 stacks-title">Tech Stack</h3>
+          <ul class="stacks-list has-scrollbar">
+            <li class="stacks-item">
+              <a href="#">
+                <img src="./assets/images/golang.png" alt="Golang">
+              </a>
+            </li>
+            <li class="stacks-item">
+              <a href="#">
+                <img src="./assets/images/nodejs.png" alt="nodejs">
+              </a>
+            </li>
+            <li class="stacks-item">
+              <a href="#">
+                <img src="./assets/images/redis.png" alt="redis">
+              </a>
+            </li>
+            <li class="stacks-item">
+              <a href="#">
+                <img src="./assets/images/nextjs.png" alt="nextjs">
+              </a>
+            </li>
+            <li class="stacks-item">
+              <a href="#">
+                <img src="./assets/images/docker.png" alt="docker">
+              </a>
+            </li>
+            <li class="stacks-item">
+              <a href="#">
+                <img src="./assets/images/kubernetes.png" alt="kubernetes">
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Backend Developer - Genflix</h4>
+              <span>Nov 2021 — Feb 2024</span>
+              <p class="timeline-text">
+                Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi
+                Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit
+                nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud
+                officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia
+                dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris
+                ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit
+                enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Freelance Software Engineer</h4>
+              <span>Dec 2019 - Nov 2021</span>
+              <p class="timeline-text">
+                Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi
+                Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit
+                nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud
+                officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia
+                dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris
+                ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit
+                enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Backend Developer - ShweTech</h4>
+              <span>Jan 2018 - Dec 2019</span>
+              <p class="timeline-text">Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore
+                culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur
+                officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim
+                nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
+                reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident
+                adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex
+                non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est
+                culpa et culpa duis.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Freelance Programmer</h4>
+              <span>Jan 2015 - Dec 2017</span>
+              <p class="timeline-text">Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore
+                culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur
+                officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim
+                nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
+                reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident
+                adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex
+                non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est
+                culpa et culpa duis.</p>
+            </li>
+          </ol>
+        </section>
+      </article>
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="select-item">
+              <button data-select-item>Backend Development</button>
+            </li>
+            <li class="select-item">
+              <button data-select-item>Web development</button>
+            </li>
+            <li class="select-item">
+              <button data-select-item>Application</button>
+            </li>
+          </ul>
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Backend Development</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Application</button>
+              </li>
+            </ul>
+          </div>
+          <ul class="project-list">
+            <li class="project-item  active" data-filter-item data-category="application">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project.jpg" alt="finance" loading="lazy">
+                </figure>
+                <h3 class="project-title">Finance</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
     </div>
-    <div class="context">
-        <div class="grid">
-            <div class="section-right">
-                <div class="avatar-container">
-                    <img id="avatar" src="assets/images/avatar.jpg" class="avatar" />
-                </div>
-                <h2>Acep Hasanudin</h2>
-                <p>Cianjur, Indonesia</p>
-                <a href="https://instagram.com/acep.hasanudin" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/acep-hasanudin" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/acephasanudin" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://open.spotify.com/artist/7FRCX6kFapAaPzGhCLPpPu?si=0-F1HNdQT6yUQbYH3PT-jA"
-                    target="_blank"><i class="fab fa-spotify"></i></a>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <div class="flip-container">
+            <div class="flipper">
+              <div clas="front">
+                <img src="./assets/images/profile.jpg" alt="Acep Hasanudin">
+              </div>
+              <div class="back">
+                <img src="./assets/images/keyboard.jpg" alt="Keyboard">
+              </div>
             </div>
-            <div class="section-left">
-                <h2>About</h2>
-                <p>
-                    An artisan, who love coding,
-                    <a class="link" href="https://github.com/acephasanudin/acephasanudin.github.io/tree/master/certs"
-                        target="_blank">learning</a>& making
-                    <a class="link"
-                        href="https://github.com/acephasanudin/acephasanudin.github.io/tree/master/assets/musics"
-                        target="_blank">music</a>
-                    in a free time.
-                </p>
-                <p>
-                    It is nice to have a cup of
-                    <a class="link" href="https://www.buymeacoffee.com/acephasanudin" target="_blank">coffee</a>isn't
-                    it?
-                </p>
-                <br />
-                <h2>Showcase</h2>
-                <a href="https://github.com/acephasanudin/cyberstack" target="_blank">Cyberstack</a>
-                <a href="https://github.com/acephasanudin/rpg-profile" target="_blank">RPG Profile</a>
-                <a href="https://github.com/acephasanudin/npc-simulator" target="_blank">NPC Simulator</a>
-            </div>
+          </div>
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Acep Hasanudin">Acep Hasanudin</h1>
+          <p class="title">Software Engineer</p>
         </div>
-    </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:acepxhasanudin@gmail.com" class="contact-link">acepxhasanudin</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="https://wa.me/+6282110890060" class="contact-link">+62 821 1089 0060</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Birth Year</p>
+              <time datetime="1982-06-23">1996</time>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Cianjur, Indonesia</address>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
